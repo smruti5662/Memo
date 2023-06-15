@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>HTML</title>
+    <!-- Custom Styles -->
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="App">
+      <div class="new-memo card">
+        <input
+          type="text"
+          name="memo-head"
+          id="memo-head"
+          placeholder="Enter Title"
+        />
+        <textarea
+          name="memo-text"
+          placeholder="Enter what to do now"
+          id="memo-text"
+          placeholder="Enter What to do now"
+        ></textarea>
+        <div class="action-btns">
+          <select name="priority" value="High" id="priority">
+            <option selected value="default" disabled>Select Priority</option>
+            <option value="High">High</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Low">Low</option>
+          </select>
+          
+          <input
+            type="date"
+            name="deadline"
+            id="deadline"
+            placeholder="Deadline"
+          />
+        </div>
+        <button class="add-to-do">Add To list</button>
+      </div>
+      <div class="navbar">
+        <div>
+          <div class="logo">
+            <img src="imgs/logo.svg" alt="logo" />
+          </div>
+          <select name="sort" id="sort">
+            <option value="date">Date Created</option>
+            <option value="alpha">Alphabetical</option>
+            <option value="priority">Priority</option>
+            <option value="deadline">Deadline</option>
+            <option value="done">Completed</option>
+          </select>
+        </div>
+      </div>
+      <div class="content">
+        <div class="fab" id="fab">
+          <span class="icon" style="color: dodgerblue; font-size: 3rem">
+            add_circle
+          </span>
+        </div>
+        <div class="task-list">
+          <div class="na">
+            Nothing to show here. Add task by pressing the "+" icon below.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+	<input type="date" name="date" id="date" />
+
+						<option disabled selected>Select priority</option>
+            <option value="easy">Not Urgent</option>
+            <option value="Moderate">Moderate</option>
+            <option value="hard">Urgent</option>
+
+
+ -->
+
+<!-- 
+
+template
+
+
+	<div class="task">
+          <div class="head">
+            <div class="task-header">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
+              esse.
+            </div>
+            <div class="task-delete">
+              <div class="icon">delete</div>
+            </div>
+          </div>
+          <p class="task-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            reprehenderit officia totam adipisci! Dolorum ea, blanditiis ut
+            impedit necessitatibus. Labore illo, maxime! Reprehenderit
+            consectetur rerum veniam cum, impedit ipsa neque recusandae minima
+            suscipit ipsum sit architecto repudiandae in accusantium quibusdam,
+            illo laboriosam quos quod cupiditate sequi praesentium voluptate
+            labore amet.
+          </p>
+          <div class="additional">
+            <div class="priority moderate"></div>
+            <div class="deadline">25/05/2023</div>
+          </div>
+        </div>
+
+
+
+ -->
